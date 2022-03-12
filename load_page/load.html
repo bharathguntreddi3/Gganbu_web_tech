@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gganbu_tech.co</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="loader"></div>
+
+    <div class="container">
+        
+        <div class="panel active" style="background-image: url('pictures/bharath.jpg');">
+            <h3 id="gb"><b><mark>BHARATH</mark></b></h3>
+        </div>
+
+        <div class="panel" style="background-image: url('pictures/thrushit.jpg');">
+            <h3 id="yt"><b><mark>THRUSHITH</mark></b></h3>
+        </div>
+
+        <div class="panel" style="background-image: url('pictures/tejeswar.jpg');">
+            <h3 id="bt"><b><mark>TEJESWAR</mark></b></h3>
+        </div>
+
+        <div class="panel" style="background-image: url('pictures/loki.jpg');">
+            <h3 id="ll"><b><mark>LOKESHWAR</mark></b></h3>
+        </div>
+
+        <div class="panel" style="background-image: url('pictures/chanukhya.jpg');">
+            <h3 id="ct"><b><mark>CHANUKYA</mark></b></h3>
+        </div>
+
+        <div class="panel" style="background-image: url('pictures/dharma.jpg');">
+            <h3 id="dt"><b><mark>DHARMA TEJA</mark></b></h3>
+        </div>
+
+    </div>
+
+    <script src="card_script.js"></script>
+
+<!-- ##############   website loader script   #################### -->
+
+<script>
+
+    var loader = document.getElementById("loader")
+
+    window.addEventListener("load", function(){
+        loader.style.display = "none"
+    })
+
+</script>
+
+<!-- registration form -->
+ 
+<div class="register">
+    <h1><u>Gganbu registration</u></h1>
+    <h4>Register and Avail The benefits of Gganbu.</h4>
+    <form action="connect.php">
+        <label>Name:</label>
+        <input type="text" placeholder="" id="name" name="name">
+        <!-- <label>Last Name</label>
+        <input type="text" placeholder=""> -->
+        <label>Email:</label>
+        <input type="email" placeholder="" id="email" name="email">
+        <label>Phone:</label>
+        <input type="text" placeholder="" id="phone" name="phone">
+        <label>Company/Organisation:</label>
+        <input type="text" placeholder="" id="Company" name="Company">
+        <!-- <label>Password</label>
+        <input type="password" placeholder="">
+        <label>Confirm Password</label>
+        <input type="password" placeholder=""> -->
+       <button class="submit"><a href="../index.html">BACK</a></button>
+       <button class="submit"><a href="details/details.html">CONFIRM</a></button>
+       <p>For Any queries Contact- <u>gganbuwebtech@gmail.com</u> </p>
+       
+             
+        
+        <!-- <script>
+
+        function JSalert(){
+            var submit = document.getElementById("enter")
+            submit.swal("Your Form Has Successfully Submitted, You will get confirmation mail");
+        }
+        </script> -->
+        
+    </form>
+    <script>
+        function emailcheck(){
+            var emailId = document.getElementById("email");
+            var mailformat = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+            if(emailId.value.match(mailformat)){
+                return True;
+            }
+            else{
+                alert("You have entered an invalid email address!\r\n\r\n \r\n Ex : adc@efg.com");
+            }
+        }
+
+        function phonecheck(){
+            var phoneno = document.getElementById("phone");
+            var phoneformat = /^\d{10}$/;
+            if(phoneno.value.match(phoneformat)){
+                return True;
+            }
+            else{
+                alert("Not A Valid Phone Number")
+            }
+        }
+    </script>
+
+    
+    
+    
+</div>
+</body>
+</html>

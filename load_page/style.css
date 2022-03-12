@@ -1,0 +1,140 @@
+body{
+    width: 100;
+    background: linear-gradient(to top,rgba(0,0,0,0.5)50%,rgba(0,0,0,0.5)50%), url(pictures/bg3.jpg);
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 109vh;
+    overflow: hidden;
+    margin: 0;
+}
+
+.container{
+    display: flex;
+    width: 90vw;
+}
+
+.panel{
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 80vh;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    flex: 0.5;
+    margin: 10px;
+    position: relative;
+    -webkit-transition: all 900ms ease-in;
+}
+
+.panel h3{
+    font-size: 24px;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    margin: 0;
+    opacity: 0;
+}
+
+.panel.active{
+    flex: 5;
+}
+
+.panel.active h3{
+    opacity: 1;
+    transition: opacity 0.3s ease-in 0.4s;
+}
+
+
+@media (max-width: 480px) {
+    .container{
+        width: 100vw;
+    }
+    .card:nth-of-type(4),
+    .panel:nth-of-type(5){
+        display: none;
+    }
+}
+
+/* loading the initial loader gif */
+#loader{
+    background: #000 url(pictures/gifer.gif) no-repeat center;
+    background-size: 20%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    transition-delay: 5s;
+}
+
+
+
+
+/* -------------- */
+
+
+.register{
+    background: transparent;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    width: 500px;
+    height: 525px;
+    margin: auto;
+    border-radius: 3px;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    padding-top: 15px;
+
+}
+
+h4{
+    text-align: center;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px ;
+}
+
+form input{
+    width: 100%;
+    border: none;
+    border: 1px solid white;
+    border-radius: 6px;
+    outline: none;
+    padding: 9px;
+    background: transparent;
+    color: #fff;
+}
+
+.submit{
+    width: 150;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #52a377;
+    border-color: #52a377;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.submit:hover{
+    background-color: grey;
+    color: crimson;
+}
+.p{
+    color: red;
+}

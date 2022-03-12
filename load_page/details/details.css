@@ -1,0 +1,131 @@
+body, html{
+    height: 85%;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    color: #666;
+}
+
+.bharath{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+}
+
+.thrushit{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+}
+
+.chanukhya{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+}
+
+.loki{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+}
+
+.tejeswar{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+}
+
+.dharma{
+    height: 250px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 200px;
+}
+
+.bimg1{
+    background-image: url(d_pictures/img1.jpg);
+    min-height: 100%;
+}
+
+.bimg2{
+    background-image: url(d_pictures/img1.jpg);
+    min-height: 100%;
+}
+
+.bimg3{
+    background-image: url(d_pictures/img1.jpg);
+    min-height: 100%;
+}
+
+.bimg4{
+    background-image: url(d_pictures/img1.jpg);
+    min-height: 100%;
+}
+
+.bimg5{
+    background-image: url(d_pictures/img1.jpg);
+    min-height: 100%;
+}
+
+.bimg6{
+    background-image: url(d_pictures/img1.jpg);
+    min-height: 100%;
+}
+
+.bimg1, .bimg2, .bimg3, .bimg4, .bimg5, .bimg6{
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+}
+
+section{
+    padding: 30px 50px;
+    background-image: url(d_pictures/img3.jpg);
+    position: relative;
+    opacity: 0.9;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    color: white;
+}
+
+.submit{
+    width: 150;
+    height: 35px;
+    margin-top: 20px;
+    border: none;
+    background-color: #52a377;
+    border-color: #52a377;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 20px;
+}
+
+.submit:hover{
+    background-color: grey;
+    color: crimson;
+}
